@@ -2,7 +2,10 @@
 
 ## 项目介绍
 > 学习python的demo
->
+
+命令：
+
+​	查看安装的包  ： pip list
 
 ### 安装python步骤
 
@@ -78,6 +81,34 @@ Use "scrapy <command> -h" to see more info about a command
 
 ### 新建项目
 
-#### 新建scrapy项目
+#### scrapy项目
 
-​	在工作空间目录 输入 scrapy startproject tutorial 即会创建tutorial目录
+> http://scrapy-chs.readthedocs.io/zh_CN/0.24/index.html
+
+在工作空间目录 输入 scrapy startproject tutorial 即会创建tutorial目录
+
+该命令将会创建包含下列内容的 `tutorial` 目录:
+
+```
+tutorial/
+    scrapy.cfg
+    tutorial/
+        __init__.py
+        items.py
+        middlewares.py
+        pipelines.py
+        settings.py
+        spiders/
+            __init__.py
+            ...
+```
+
+这些文件分别是:
+
+- `scrapy.cfg`: 项目的配置文件
+- `tutorial/`: 该项目的python模块。之后您将在此加入代码。
+- `tutorial/items.py`: 项目中的item文件.
+- `tutorial/pipelines.py`: 项目中的pipelines文件.
+- `tutorial/settings.py`: 项目的设置文件.
+- `tutorial/spiders/`: 放置spider代码的目录.
+
