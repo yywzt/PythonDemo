@@ -77,7 +77,35 @@ Available commands:
 Use "scrapy <command> -h" to see more info about a command
 ```
 
-
+> scrapy报错： failed to create process
+>
+> 解决的办法：使用easy_install重新安装，如果easy_install也报错，就是用pip安装。
+>
+> 
+>
+> 运行scrapy crawl dmoz 命令报错：
+>
+> Traceback (most recent call last): .....
+>
+> ​	SyntaxError: invalid syntax
+>
+> 需要安装
+>
+> ```html
+> pywin32-218.win32-py2.7.exe
+> 
+> Twisted-13.1.0.win32-py2.7.exe
+> 
+> zope.interface-4.0.5.win32-py2.7.exe
+> 
+> lxml-3.2.3.win32-py2.7.exe
+> 
+> pyOpenSSL-0.11.winxp32-py2.7.exe
+> ```
+>
+> 缺少了pywin32-218.win32-py2.7.exe
+>
+> 
 
 ### 新建项目
 
@@ -112,3 +140,35 @@ tutorial/
 - `tutorial/settings.py`: 项目的设置文件.
 - `tutorial/spiders/`: 放置spider代码的目录.
 
+
+
+
+
+### miniconda的安装及使用
+
+#### 1、安装 miniconda
+
+进入网址 [Miniconda - Conda](https://conda.io/miniconda.html)
+
+下载对应版本的miniconda，安装
+
+#### 2.创建 Python3.6 的虚拟环境
+
+在 cmd 终端或者Anaconda Prompt输入： `conda create –n course_py36 python=3.6` 。 
+
+“course py35”可以替换为你想用的名称，按回车键执行代码，下同
+
+安装工具包的时候可能需要安装一些其他的工具，如果系统提示 proceed ([y]/n)? ，输入y， 回车就ok。
+
+出现如下图提示 “To activate this environment……”表示环境配置成功
+
+尝试触发刚创建的这个环境，输入： `activate course_py35` 
+这里如果你用的是其他的名字，输入“activate+名称”就可以了
+
+如果命令行出现（course_py35）或者说是你自己设定的名称，表示已经载入这个环境
+
+你可以选择查看 Python 的版本是否是我们刚创建的3.5版本，输入：`python` 
+不出意外的话，系统会给你反馈 python 的版本信息
+
+输入：`quit()` 
+退出 python 环境（注意此处的括号为英文状态下输入的）
