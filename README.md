@@ -32,11 +32,14 @@ pip安装成功后
 
    因为下载pygame是whl文件，所以需要安装wheel
 
-- 去https://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame下载对应版本的whl文件，
+1、 - 去https://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame下载对应版本的whl文件，
+        
+        - 进入whl文件目录，cmd命令  pip install  pip installpygame‑1.9.3‑cp36‑cp36m‑win_amd64.whl
+        
+        - 成功后 cmd输入python，进入调试环境，输入import pygame即可
 
-- 进入whl文件目录，cmd命令  pip install  pip installpygame‑1.9.3‑cp36‑cp36m‑win_amd64.whl
-
-- 成功后 cmd输入python，进入调试环境，输入import pygame即可
+2、  
+第一个方法失败，也可输入pip install pygame进行安装
 
 #### 4.安装Scrapy爬虫框架
 
