@@ -82,13 +82,20 @@
 # %f	浮点数
 # %s	字符串
 # %x	十六进制整数
-print('Hello, %s' % 'world')
-print('Hi, %s, you have $%d.' % ('Michael', 1000000))
-print('%2d-%02d' % (3, 1))
-print('%.2f' % 3.1415926)
+# print('Hello, %s' % 'world')
+# print('Hi, %s, you have $%d.' % ('Michael', 1000000))
+# print('%2d-%02d' % (3, 1))
+# print('%.2f' % 3.1415926)
 
 # test
-s1=int(input('小明上学期期末成绩为：'))
-s2=int(input('小明本学期期末成绩为：'))
-r=((s2-s1)/s1*100)
-print('小明本次成绩变化为 %.1f%%'%r)
+# s1=int(input('小明上学期期末成绩为：'))
+# s2=int(input('小明本学期期末成绩为：'))
+# r=((s2-s1)/s1*100)
+# print('小明本次成绩变化为 %.1f%%'%r)
+
+content = u'\xF0\xBC\x88\x99\xE4\xBB';
+content = content.encode("latin1").decode("gbk");
+print(content);
+content = u'\xF0\xB8\xA4\xA9\xE7\x94';
+content = content.encode("latin1").decode("gbk");
+print(content);
